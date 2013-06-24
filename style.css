@@ -430,6 +430,11 @@ a{
 	text-decoration:none;
 }
 
+a, a:visited, a {
+    color: #3F3F3F;
+    cursor: pointer;
+}
+
 ul, ol, p, h1, h2, h3, h4, h5, h6{
 	margin: 0;
 	padding: 0;
@@ -617,4 +622,27 @@ body{
     outline: medium none;
     padding: 10px 10px 10px 0;
     width: 205px;
+}
+
+.bb-outer{
+    width: 1024px;
+    margin: 0 auto 30px;
+}
+
+.bb-inner{
+    width: 1040px;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.bb-item{
+    float: left;
+    margin-right: 16px;
+    width:330px;
+    height: 600px;
+    background: #000;
+}
+
+.bb-item img{
+    display: block;
 }
