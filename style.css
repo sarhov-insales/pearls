@@ -463,6 +463,7 @@ body{
 
 .page-wrapper{
     min-width: 1064px;
+    padding-bottom: 350px;
 }
 
 
@@ -682,7 +683,16 @@ body{
     width: 100%;
     height: 600px;
     background: #ccc;
-
+    margin-bottom: 250px;
 }
 
 /*--------THE END--------- maincontent*/
+
+
+
+
+
+
+/*------------------- footer*/
+    
+/*---------THE END---------- footer*/
