@@ -497,9 +497,52 @@ li{
 
 /*=========THE END========cutom normalize*/
 
-html{
+
+
+* {
+    margin: 0;
+}
+html, body {
     height: 100%;
 }
+.page-wrapper {
+    min-width: 1064px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.site-footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body{
      color: #9A9999;
@@ -507,13 +550,9 @@ body{
     font-size: 12px;
     line-height: 17px;
     background: #000 url('bg.png') center top  repeat-y;
-    min-height: 100%;
+    position: relative;
 }
 
-.page-wrapper{
-    min-width: 1064px;
-    padding-bottom: 350px;
-}
 
 
 
@@ -875,19 +914,24 @@ sidebar
 .content-block{
     float: left;
     width: 740px;
+    overflow: hidden;
 }
 
-.content-block  > h1{
+.content-block  h1{
      background: none repeat scroll 0 0 transparent;
     color: #F74779;
-    padding: 10px 0;
-    margin-bottom: 25px;
+    padding: 20px 0;
 }
 
+
+.item-boxes-inner{
+    width:760px;
+    overflow: hidden;
+}
 
 .itembox{
     float: left;
-    margin: 10px;
+    margin: 20px 20px 20px 0;
 }
 
 .itembox .name{
@@ -911,7 +955,9 @@ sidebar
 /*--------THE END--------- maincontent*/
 
 
-
+.site-footer{
+    width: 100%;
+}
 
 
 
