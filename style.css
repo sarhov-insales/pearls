@@ -460,6 +460,30 @@ a, a:visited, a {
     text-decoration: none;
 }
 
+.name a:hover{
+    text-decoration: underline;
+}
+
+a.button {
+    background: url('button-bg.png') repeat-x scroll 0 top #EEEDEB;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #968CB4;
+    display: inline-block;
+    padding: 8px 14px;
+}
+
+a.button:hover{
+    background: url('button-bg.png') repeat-x scroll 0 bottom #EEEDEB;
+    color: #fff;
+}
+
 ul, ol, p, h1, h2, h3, h4, h5, h6{
 	margin: 0;
 	padding: 0;
@@ -767,7 +791,7 @@ sidebar
 
 
 
-.block-head > h1{
+.block-head > h1, .content-block > h1{
      background: url('box-heading.gif') repeat-x scroll 0 0 #F53665;
     color: #FFFFFF;
     font-family: 'Emilys Candy',cursive;
@@ -808,7 +832,7 @@ sidebar
     text-transform: uppercase;
 }
 
-.category ul li a:hover{
+.category-block ul li a:hover{
      color: #F74275;
 }
 
@@ -850,9 +874,38 @@ sidebar
 
 .content-block{
     float: left;
-    width: 710px;
+    width: 740px;
+}
 
-    min-height: 600px;       /*themp*/
+.content-block  > h1{
+     background: none repeat scroll 0 0 transparent;
+    color: #F74779;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+
+.itembox{
+    float: left;
+    margin: 10px;
+}
+
+.itembox .name{
+    min-height: 80px;
+    padding: 10px 0 0 0;
+    overflow: hidden;
+    max-height: 80px;
+}
+
+
+.itembox img{
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+    display: block;
+}
+
+.itembox .price{
+    margin-bottom: 10px;
 }
 
 /*--------THE END--------- maincontent*/
