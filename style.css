@@ -685,13 +685,13 @@ body{
 }
 
 .maincontent-middle{
-    background:   url('main-tail.gif') center 0 fixed repeat-y;
+    background:   url('main-tail.gif') center 0  repeat-y;
 }
 
 
 
 .maincontent-inner{
-    background: url('mainbg-shining.jpg') center top fixed no-repeat;
+    background: url('mainbg-shining.jpg') center top  no-repeat;
 }    
 
 
@@ -712,7 +712,7 @@ sidebar
     float: left;
     width: 244px;
     margin-right: 40px;
-
+    overflow: hidden;
     min-height: 600px;        /*themp*/
 }
 
@@ -724,9 +724,34 @@ sidebar
     text-transform: uppercase;
 }
 .block-head{
-    background: url("../image/heading-shining.png") no-repeat scroll 0 bottom transparent;
+    background: url('heading-shining.png') no-repeat scroll 0 bottom transparent;
     padding-bottom: 7px;
 }
+
+.block-head > h1{
+     background: url('ox-heading.gif') repeat-x scroll 0 0 #F53665;
+    color: #FFFFFF;
+    font-family: 'Emilys Candy',cursive;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 29px;
+    padding: 11px 0 10px 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.category ul li{
+    background: url('line-2.png') repeat-x scroll 0 top transparent;
+    line-height: 15px;
+    padding: 13px 0 12px 19px;
+    position: relative;
+}    
+
+.category ul li:first-child{
+    background:none;
+}    
 
 .category ul li a{
     background: url('category-marker.png') no-repeat scroll 0 1px transparent;
@@ -737,6 +762,10 @@ sidebar
     padding: 0 0 0 21px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.category ul li a:hover{
+     color: #F74275;
 }
 
 
