@@ -682,7 +682,7 @@ body{
 .maincontent-outer{
     width: 100%;
     height: 600px;
-    background: #ccc;
+    background: #ccc url('main-bg.gif') 0 0 repeat ;
 }
 
 /*--------THE END--------- maincontent*/
