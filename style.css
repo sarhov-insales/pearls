@@ -681,21 +681,83 @@ body{
 
 .maincontent-outer{
     width: 100%;
-    height: 600px;
     background: #ccc url('main-bg.gif') 0 0 repeat;
 }
 
 .maincontent-middle{
     background:   url('main-tail.gif') center 0 fixed repeat-y;
-    height: 100%;   /*temmp*/;
 }
 
 
 
 .maincontent-inner{
     background: url('mainbg-shining.jpg') center top fixed no-repeat;
-    height: 100%;   /*temmp*/;
 }    
+
+
+.mc-wrapper{
+    min-height: 600px;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px 0 ;
+    outline: 1 px solid #333;   /*temp*/
+}
+
+
+/*
+sidebar
+*/
+
+.main-sidebar{
+    float: left;
+    width: 244px;
+    margin-right: 40px;
+
+    min-height: 600px;        /*themp*/
+}
+
+.ms-block, .ms-block h1{
+                    font-family: 'Emilys Candy',cursive;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+.block-head{
+    background: url("../image/heading-shining.png") no-repeat scroll 0 bottom transparent;
+    padding-bottom: 7px;
+}
+
+.category ul li a{
+    background: url('category-marker.png') no-repeat scroll 0 1px transparent;
+    color: #2E2A3A;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 0 0 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-block{
+    float: left;
+    width: 740px;
+
+    min-height: 600px;       /*themp*/
+}
+
 /*--------THE END--------- maincontent*/
 
 
