@@ -465,6 +465,11 @@ body{
     min-width: 1064px;
 }
 
+
+
+/*------------------ header*/
+
+
 .header-outer{
     width: 100%;
 }
@@ -563,6 +568,14 @@ body{
     font-weight: bold;
 }
 
+/*------THE END------------ header*/
+
+
+
+
+/*------------------ main menu*/
+
+
 .main-menu{
     clear: both;
     margin: 30px auto;
@@ -629,6 +642,11 @@ body{
     width: 205px;
 }
 
+/*------THE END------------ main menu*/
+
+
+/*----------------- banners*/
+
 .bb-outer{
     width: 1024px;
     margin: 0 auto 30px;
@@ -651,3 +669,20 @@ body{
 .bb-item img{
     display: block;
 }
+
+
+/*-------THE END---------- banners*/
+
+
+
+
+/*----------------- maincontent*/
+
+.maincontent-outer{
+    width: 100%;
+    height: 600px;
+    background: #ccc;
+
+}
+
+/*--------THE END--------- maincontent*/
