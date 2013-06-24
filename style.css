@@ -154,6 +154,7 @@ abbr[title] {
 b,
 strong {
     font-weight: bold;
+    color: #000;
 }
 
 /**
@@ -624,18 +625,88 @@ body{
     float: right;
     padding: 3px 0 0 27px;
     clear: right;
+    position:relative;
 
 }
 
+.mini-cart-info{
+     background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    clear: both;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    transition: all 0.5s ease-in-out 0s;
+    width: 220px;
+}
+
+.mci-header{
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mini-cart-list li{
+    background: #fff url('mini-cart-list.gif') left bottom repeat-x;
+    position:relative;
+    padding: 10px 0;
+}
+
+.mini-cart-list img{
+    float: left;
+    margin-right: 5px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+    display: block;
+    margin-left: 5px;
+}
+
+
+
+.remover{
+    position: absolute;
+    background: #ccc url('close.png') 0 0 no-repeat;
+    right: 5px;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+}
+
+.remover:hover{
+    background-position:0 -11px;
+}
+
+
 .cart p{
-        color: #F74275;
-    font-size: 12px;
+        color: #A6A4A4;
+    font-size: 11px;
     line-height: 15px;
     padding-right: 0;
-    padding-top: 4px;
+    padding-top: 5px;
     text-align: left;
     text-transform: capitalize;
     font-weight: bold;
+}
+
+
+.mini-cart-list span{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.mci-footer{
+    font-size: 12px;
+    text-align: right;
+    padding: 10px;
+}
+
+.mci-footer p{
+    text-align: right;
+}
+
+.mci-buy{
+    margin: 10px 0 10px ;
 }
 
 /*------THE END------------ header*/
