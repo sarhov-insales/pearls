@@ -424,7 +424,26 @@ table {
     border-spacing: 0;
 }
 
-/*=================cutom normalize*/
+/*=================cutom normalize and globals*/
+
+
+
+.price .old-price{
+    color: #939393;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+
+.price .new-price{
+    margin-right: 10px;
+    color: #FF3867;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 12px;
+}
 
 a{
 	text-decoration:none;
@@ -433,6 +452,12 @@ a{
 a, a:visited, a {
     color: #3F3F3F;
     cursor: pointer;
+}
+
+.name a{
+    color: #2E2A3A;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 ul, ol, p, h1, h2, h3, h4, h5, h6{
@@ -716,6 +741,10 @@ sidebar
     min-height: 600px;        /*themp*/
 }
 
+.ms-block{
+    margin-bottom: 20px;
+}
+
 .ms-block, .ms-block h1{
                     font-family: 'Emilys Candy',cursive;
     font-size: 24px;
@@ -723,13 +752,23 @@ sidebar
     line-height: 29px;
     text-transform: uppercase;
 }
+
+
+.ms-block img{
+      background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+    display: block;
+}
+
 .block-head{
     background: url('heading-shining.png') no-repeat scroll 0 bottom transparent;
     padding-bottom: 7px;
 }
 
+
+
 .block-head > h1{
-     background: url('ox-heading.gif') repeat-x scroll 0 0 #F53665;
+     background: url('box-heading.gif') repeat-x scroll 0 0 #F53665;
     color: #FFFFFF;
     font-family: 'Emilys Candy',cursive;
     font-size: 24px;
@@ -743,18 +782,22 @@ sidebar
     overflow: hidden;
 }
 
-.category  ul  li{
+.category-block h1{
+    background: #3F3A4D url('category-heading.gif') 0 0 repeat-x;
+}
+
+.category-block  ul  li{
     background: url('line-2.png') repeat-x scroll 0 top transparent;
     line-height: 15px;
     padding: 10px 0 12px 19px;
     position: relative;
 }    
 
-.category ul li:first-child{
+.category-block ul li:first-child{
     background:none;
 }    
 
-.category ul li a{
+.category-block ul li a{
     background: url('category-marker.png') no-repeat scroll 0 1px transparent;
     color: #2E2A3A;
     display: inline-block;
@@ -769,13 +812,37 @@ sidebar
      color: #F74275;
 }
 
+.block-item-info{
+    overflow: hidden;
+}
 
+.specials li{
+    display: block;
+    background: url('line-2.png') repeat-x scroll 0 0 transparent;
+    padding: 20px 0
+}
 
+.specials li:first-child{
+    background: none;
+}
 
+.block-content img{
+    float: left;
+    margin-right: 20px;
+}
 
+.block-item-info .name a{
+    font-size: 11px;
+    line-height: 18px;
+}
 
+.block-item-info .name{
+    padding: 7px 0 13px;
+}
 
-
+.block-item-info .price span{
+    display: block;
+}
 
 
 
