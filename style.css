@@ -506,7 +506,7 @@ html, body {
     height: 100%;
 }
 .page-wrapper {
-    min-width: 1064px;
+    min-width: 1068px;
     min-height: 100%;
     height: auto !important;
     height: 100%;
@@ -514,6 +514,7 @@ html, body {
 }
 
 .site-footer, .push {
+     width: 100%;
     height: 142px; /* .push must be the same height as .footer */
 }
 
@@ -524,26 +525,6 @@ http://ryanfait.com/
 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body{
      color: #9A9999;
     font-family: Arial,Helvetica,sans-serif;
@@ -552,9 +533,6 @@ body{
     background: #000 url('bg.png') center top  repeat-y;
     position: relative;
 }
-
-
-
 
 /*------------------ header*/
 
@@ -953,11 +931,6 @@ sidebar
 }
 
 /*--------THE END--------- maincontent*/
-
-
-.site-footer{
-    width: 100%;
-}
 
 
 
