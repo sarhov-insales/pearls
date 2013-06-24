@@ -685,10 +685,16 @@ body{
     background: #ccc url('main-bg.gif') 0 0 repeat;
 }
 
+.maincontent-middle{
+    background:   url('main-tail.gif') center 0 fixed repeat-y;
+    height: 100%;   /*temmp*/;
+}
+
+
 
 .maincontent-inner{
-    background: url('main-tail.gif') center 0 fixed repeat-y;
-    height: 100%;   /*temmp*/
+    background: url('mainbg-shining.jpg') center top fixed no-repeat;
+    height: 100%;   /*temmp*/;
 }    
 /*--------THE END--------- maincontent*/
 
