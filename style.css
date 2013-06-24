@@ -740,12 +740,13 @@ sidebar
     overflow: hidden;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
+    overflow: hidden;
 }
 
-.category ul li{
+.category  ul  li{
     background: url('line-2.png') repeat-x scroll 0 top transparent;
     line-height: 15px;
-    padding: 13px 0 12px 19px;
+    padding: 10px 0 12px 19px;
     position: relative;
 }    
 
@@ -782,7 +783,7 @@ sidebar
 
 .content-block{
     float: left;
-    width: 740px;
+    width: 710px;
 
     min-height: 600px;       /*themp*/
 }
