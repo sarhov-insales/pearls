@@ -425,7 +425,7 @@ table {
     border-spacing: 0;
 }
 
-/*=================cutom normalize and globals*/
+/*=================custom normalize and globals*/
 
 
 
@@ -1011,6 +1011,10 @@ sidebar
     margin: 20px 20px 20px 0;
 }
 
+.itembox figure{
+    position: relative;
+}
+
 .itembox .name{
     min-height: 80px;
     padding: 10px 0 0 0;
@@ -1023,6 +1027,24 @@ sidebar
     background: none repeat scroll 0 0 #FFFFFF;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
     display: block;
+}
+
+.quick-view{
+    position: absolute;
+    top:41%;
+    left:14%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.itembox:hover .quick-view{
+    visibility: visible;
+    opacity: 1;
 }
 
 .itembox .price{
