@@ -919,14 +919,6 @@ sidebar
     background:none;
 }
 
-.category-block  ul  li span{
-    width: 50px;
-    height: 40px;
-    background: #c9c9c9;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
 
 .close{
     background: #9c0;
