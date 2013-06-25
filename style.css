@@ -920,9 +920,18 @@ sidebar
 }
 
 
-.close{
+.open-close{
     background: #9c0;
+    top:15px;
+    right: 15px;
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
 }
+
+
+
 
 .category-block ul li a{
     background: url('category-marker.png') no-repeat scroll 0 1px transparent;
