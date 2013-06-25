@@ -629,6 +629,10 @@ body{
 
 }
 
+.cart > p{
+    cursor: pointer;
+}
+
 .mini-cart-info{
      background: none repeat scroll 0 0 #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -637,7 +641,6 @@ body{
     position: absolute;
     right: 0;
     top: 22px;
-    transition: all 0.5s ease-in-out 0s;
     width: 220px;
 }
 
@@ -914,7 +917,20 @@ sidebar
 
 .category-block ul li:first-child{
     background:none;
-}    
+}
+
+.category-block  ul  li span{
+    width: 50px;
+    height: 40px;
+    background: #c9c9c9;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.close{
+    background: #9c0;
+}
 
 .category-block ul li a{
     background: url('category-marker.png') no-repeat scroll 0 1px transparent;
