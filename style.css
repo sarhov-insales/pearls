@@ -1009,6 +1009,13 @@ sidebar
 .itembox{
     float: left;
     margin: 20px 20px 20px 0;
+    overflow: hidden;
+    width: 170px;
+    padding: 3px;
+}
+
+.itembox:first-child{
+    posa+w670
 }
 
 .itembox figure{
