@@ -24,7 +24,7 @@ $('li.item a').after('<span></span>');
 $('li.item ul').css('display','none');
 $('li.item ul.active').css('display','block');
 $('li.item ul').each(function(index) {
-$(this).prev().addClass('close').click(function() {
+$(this).prev().addClass('open-close').click(function() {
 if (
 $(this).next().css('display') == 'none') {
 $(this).next().slideDown(400, function () {
