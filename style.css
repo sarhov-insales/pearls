@@ -777,7 +777,7 @@ font-weight: bold;
 
 .single-price{
    background: #F84F80;
-    padding: 17px 20px;
+    padding: 20px 20px  17px 20px;
     margin: 10px 0;
    
 }
@@ -818,4 +818,28 @@ font-weight: bold;
     text-decoration: none;
     color: #fff;
 }
+
+
+.ratingstars{
+    padding: 10px 0;
+    background: #F84F80;
+}
+
+.ratingstars img{
+    float: left;
+    margin-left: 7px;
+}
+
+.write-rev{
+    float: right;
+margin-right: 7px;
+}
+
+.rev-counts{
+    color: #fff;
+    border-right: 2px solid #ccc;
+    margin-right: 8px;
+    padding-right: 7px;
+}
+
 /*this must be moved*/
