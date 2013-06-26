@@ -775,4 +775,22 @@ font-weight: bold;
 }
 
 
+.single-price{
+   background: #F84F80;
+    padding: 12px 5px 10px 18px;
+    margin-bottom: 5px;  
+   
+}
+
+.single-price span{
+   color: #191919;
+    font-weight: bold;
+    font-size: 22px;
+} 
+
+.single-price .old-price{
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
 /*this must be moved*/
