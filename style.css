@@ -842,4 +842,9 @@ margin-right: 7px;
     padding-right: 7px;
 }
 
+
+.product-information{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d6d5d3;
+}
 /*this must be moved*/
