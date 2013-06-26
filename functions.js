@@ -113,16 +113,28 @@ imgclone.animate({
 'width': 0,
 'height': 0
 });
-
-
-
 });
 
 
 
+// The Plugins
+
+
+    jQuery('#mycarousel').jcarousel({
+        // Configuration goes here
+    });
 
 
 
 
 
+
+
+
+
+
+
+
+
+// =====
 });
