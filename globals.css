@@ -450,10 +450,6 @@ a{
 	text-decoration:none;
 }
 
-a, a:visited, a {
-    color: #3F3F3F;
-    cursor: pointer;
-}
 
 .name a{
     color: #2E2A3A;
