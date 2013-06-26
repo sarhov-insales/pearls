@@ -624,7 +624,7 @@ sidebar
 
 .product-image{
     float: left;
-    margin-right: 10px;
+    margin: 0 20px 20px 0;
 }
 
 .deep-info a{
@@ -669,6 +669,33 @@ text-align: center;
 width: 38px;
 color: #fff;
 font-weight: normal;
+}
+
+.towish a{
+    display: inline-block;
+background: url('iconimage.png') no-repeat 0px 0px;
+height: 24px;
+margin: 0 5px;
+overflow: hidden;
+text-indent: -9999px;
+width: 25px;
+}
+
+.tocompare a{
+background: url('iconimage.png') no-repeat -29px 0px;
+display: inline-block;
+height: 24px;
+overflow: hidden;
+text-indent: -9999px;
+width: 25px;
+}
+
+.towish:hover a{
+    background-position: 0 -24px;
+}
+
+.tocompare:hover a{
+    background-position: -29px -24px;
 }
 
 .qw-text{
