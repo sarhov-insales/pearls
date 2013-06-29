@@ -350,7 +350,7 @@ sidebar
 }
 
 
-.ms-block img{
+.ms-block img, .related-items img{
       background: none repeat scroll 0 0 #FFFFFF;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
     display: block;
@@ -1152,3 +1152,84 @@ select{
 .item-characteristic, .item-review{
     display: none;
 }
+
+
+
+.related-items{
+   height: 320px;
+    overflow: hidden;
+    padding: 10px 10px 1px;
+    width: auto;
+    margin-top: 30px;
+}
+ .related-items  .jcarousel-clip{
+    height: 380px;
+    left: 19px;
+    overflow: hidden;
+    width: 682px;
+}
+
+.related-items li{
+    width: 163px !important;
+    display: inline-block;
+    0 23px 16px -21px
+    padding: 10px;
+    vertical-align: top;
+    height:100%;
+    background: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.related-items li img{
+    max-width: none;
+}
+
+.related-items .name{
+    margin: 15px 0 20px;
+}
+
+
+.related-items .price{
+    margin: 15px 0 20px;
+}
+
+
+.related-items .jcarousel-next{
+
+background: url('related-pagg-next.png') no-repeat scroll -24px 50% #F53767;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    height: 100px;
+    position: absolute;
+    right: -10px;
+    top: 90px;
+    width: 26px;
+    cursor: pointer;
+}
+
+.related-items  .jcarousel-next:hover, .related-items  .jcarousel-next.jcarousel-next-disabled {
+    background-color: #514F60;
+    background-position: 10px 50%;
+}
+
+
+.related-items  .jcarousel-next.jcarousel-next-disabled, .related-items  .jcarousel-prev.jcarousel-prev-disabled {
+    cursor: default;
+}
+
+.related-items .jcarousel-prev:hover, .related-items .jcarousel-prev.jcarousel-prev-disabled {
+    background-color: #514F60;
+    background-position: -26px 50%;
+}
+
+.related-items  .jcarousel-prev {
+    border-radius: 10px 0 0 10px;
+    height: 100px;
+    left: -10px;
+    position: absolute;
+    top: 90px;
+    width: 26px;
+    cursor: pointer;
+      background: url('related-pagg-prev.png') no-repeat scroll 8px 50% #F53767;
+  }
