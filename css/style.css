@@ -474,15 +474,6 @@ font-size: 12px;
     overflow: hidden;
 }
 
-.content-block  h1{
-     background: none repeat scroll 0 0 transparent;
-    color: #F74779;
-    padding: 20px 0;
-    font-family: Theano Modern;
-  font-size: 24px;
-  font-weight: 400;
-  text-transform:uppercase;
-}
 
 
 .item-boxes-inner{
@@ -742,6 +733,26 @@ font-weight: bold;
     color: #2E2A3A;
 }
 
+.template-title{
+    width: 100%;
+    margin: 20px 0 0 0 !important;
+    color: #000;
+    font-size: 25px !important;
+    border: none !important;
+}
+
+.template-description, .any-description{
+      background: url('box-bg.png') repeat-x scroll 0 0 #FFFFFF;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.any-description{
+    border-bottom: 1px solid #D6D5D3;
+    border-top: 1px solid #D6D5D3;
+}
+
 .single-products{
     float: left;
     margin-right: 20px;
@@ -823,7 +834,7 @@ overflow: hidden;
 .jcarousel-item {
     height: 96px;
     width: 96px;
-    margin: 0 8px 0 0;
+    margin: 0 8px 0 1px;
   background:#fff;
   text-align:center;
 }
@@ -864,7 +875,7 @@ background-color: #3A3637;
 
 }
 
-.single-title, .variants .title{
+.single-title, .variants .title, .template-title{
     color: #303030 !important;
     padding-top: 4px;
     font-size: 25px;
@@ -1233,3 +1244,79 @@ background: url('related-pagg-next.png') no-repeat scroll -24px 50% #F53767;
     cursor: pointer;
       background: url('related-pagg-prev.png') no-repeat scroll 8px 50% #F53767;
   }
+
+
+
+.product-filter {
+    background: url('box-heading.gif') repeat-x scroll 0 0 transparent;
+    margin-bottom: 0;
+    overflow: auto;
+    padding: 7px 6px 5px 11px;
+}
+.product-filter .product-compare {
+    padding: 3px 0 0 20px;
+}
+
+
+.product-filter .sort {
+    color: #FFFFFF;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.product-filter .limit {
+    color: #FFFFFF;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 13px;
+}
+
+.product-compare {
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.product-filter .display {
+    color: #FFFFFF;
+    float: right;
+    height: 24px;
+}
+
+
+.product-filter .product-compare a {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.product-filter .product-compare a:hover {
+    color: #000;
+}
+
+
+.product-filter .display b {
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.display li{
+    float: left;
+    height: 24px;
+    margin-left: 8px;
+    text-indent: -9999px;
+    width: 25px;
+}
+
+.display li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
