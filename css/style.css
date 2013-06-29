@@ -1,5 +1,14 @@
-/*------------------ header*/
+@import http://webfonts.ru/import/theano.css;
 
+@import http://webfonts.ru/import/roboto.css;
+
+
+
+
+
+
+
+/*------------------ header*/
 
 .header-outer{
     width: 100%;
@@ -102,6 +111,12 @@
     right: 0;
     top: 22px;
     width: 220px;
+  visibility:hidden;
+  z-index:999;
+}
+
+.cart:hover .mini-cart-info{
+        visibility:visible
 }
 
 .mci-header{
@@ -206,7 +221,7 @@
 
 .mm-items li a{
      display: block;
-    font-family: 'Emilys Candy',cursive;
+     font-family: Theano Modern;
     font-size: 18px;
     font-weight: normal;
     line-height: 22px;
@@ -326,10 +341,11 @@ sidebar
 }
 
 .ms-block, .ms-block h1{
-     font-family: 'Emilys Candy',cursive;
+    
     font-size: 24px;
     font-weight: normal;
-    line-height: 29px;
+    line-height: 29px; 
+      font-family: Theano Modern;
     text-transform: uppercase;
 }
 
@@ -350,8 +366,13 @@ sidebar
 .block-head > h1, .content-block > h1{
      background: url('box-heading.gif') repeat-x scroll 0 0 #F53665;
     color: #FFFFFF;
-    font-family: 'Emilys Candy',cursive;
-    font-size: 24px;
+  
+  font-family: Theano Modern;
+font-size: 24px;
+font-weight: 400;
+font-style: normal;
+color: #EEEDEB;
+  
     font-weight: normal;
     line-height: 29px;
     padding: 11px 0 10px 20px;
@@ -404,6 +425,8 @@ sidebar
     padding: 0 0 0 21px;
     text-decoration: none;
     text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+font-size: 12px;
 }
 
 .category-block ul li a:hover{
@@ -430,21 +453,20 @@ sidebar
 }
 
 .block-item-info .name a{
-    font-size: 11px;
+    font-size:10px;
+    font-weight:bold;
     line-height: 18px;
+  font-family:arial, helvetica, sans-serif;
 }
 
 .block-item-info .name{
-    padding: 7px 0 13px;
+    padding: 1px 0 13px;
+    
 }
 
 .block-item-info .price span{
     display: block;
 }
-
-
-
-
 
 .content-block{
     float: left;
@@ -456,6 +478,10 @@ sidebar
      background: none repeat scroll 0 0 transparent;
     color: #F74779;
     padding: 20px 0;
+    font-family: Theano Modern;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform:uppercase;
 }
 
 
@@ -638,21 +664,11 @@ sidebar
     line-height: 23px;
 }
 
-.qw .buy, .qw .price{
-    padding: 10px 0;
-}
+.qw .price{
+    padding:20px 0;
+}  
 
-.product-title{
-    color: #191919;
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    font-weight: normal;
-    line-height: normal;
-    margin-bottom: 25px;
-    font-family: 'Emilys Candy',cursive;
-}
+
 
 
 .stock{
@@ -709,7 +725,7 @@ border: 1px solid #ccc;
 
 .breadcrumb{
 color: #fff;
-padding: 6px 5px 5px 10px;
+padding: 10px 5px 5px 10px;
 font-size: 12px;
 margin-bottom: 10px;
 background: url('box-heading.gif') repeat-x;
@@ -733,13 +749,18 @@ font-weight: bold;
     background: #4D485D;
     position: relative;
     z-index: 1;
-    width: 310px;
+    width: 320px;
 }
 
 .product-image img{
     background: #fff;
     max-width:100%;
 }
+
+.product-image a{
+    background:#fff;
+  text-align:center;
+    }
 
 .cloud-zoom-big{
     background: #fff;
@@ -787,7 +808,7 @@ font-weight: bold;
 
 
 .zoom-desc{
-width: 290px;
+width: 310px;
 height: 90px;
 clear: both;
 overflow: hidden;
@@ -796,13 +817,20 @@ overflow: hidden;
 
 .clip-horizontal {
     height: 90px;
-    width: 290px;
+    width: 310px;
 }
 
 .jcarousel-item {
-    height: 90px;
-    width: 90px;
+    height: 96px;
+    width: 96px;
     margin: 0 8px 0 0;
+  background:#fff;
+  text-align:center;
+}
+
+.jcarousel-item img{
+    max-width:100px;
+    height:auto
 }
 
 .jcarousel-next-horizontal{
@@ -831,13 +859,12 @@ background-color: #3A3637;
 
 
 .products-info{
-    width: 410px;
-    height: 400px;
+    width: 390px;
     float: left;
 
 }
 
-.single-title{
+.single-title, .variants .title{
     color: #303030 !important;
     padding-top: 4px;
     font-size: 25px;
@@ -846,12 +873,17 @@ background-color: #3A3637;
     margin-bottom: 13px;
     text-transform: uppercase;
     line-height: normal;
-    font-family: 'Emilys Candy',cursive;
+    font-family: Theano Modern;
     padding: 0 !important;
     padding-bottom: 20px !important;
     border-bottom: 1px solid #d6d5d3;
-
 }
+
+.variants .title{
+    font-size: 20px;
+    border: none;
+}
+
 
 .single-info, .single-info a{
     color: #191919;
@@ -888,6 +920,24 @@ font-weight: bold;
     margin-left: 5px;
 }
 
+.price-tax{
+   font-size: 15px !important;
+}
+
+.reward{
+    display: block;
+    padding-top:15px;
+    font-size: 11px !important;
+    font-weight: bold;
+    color: #fff !important; 
+}
+
+.discount{
+     color: #4D4D4D;
+    font-size: 12px;
+    font-weight: normal;
+}
+
 .product-count{
     padding: 20px 0;
 }
@@ -908,9 +958,11 @@ font-weight: bold;
 
 .product-count .addToCart{
     font-size: 16px;
-    background: url('image/button-bg.png') repeat-x scroll 0 bottom #9C9BB6;
+    background: url('button-bg.png') repeat-x scroll 0 top #9C9BB6;
     text-decoration: none;
     color: #fff;
+  color:#968CB4;
+  cursor:pointer;
 }
 
 
@@ -949,4 +1001,154 @@ margin-right: 7px;
     padding-bottom: 30px;
     border-bottom: 1px solid #d6d5d3;
 }
-/*this must be moved*/
+
+/* then remove  */
+
+
+#own_preloader{
+z-index: 1000;
+text-align: center;
+vertical-align: middel;
+font-weight: bold;
+width: 200px;
+height: 60px;
+  background:#fff;
+}
+
+
+.quantity{
+    float:left;
+}
+
+.quantity_input{
+    width:35px;
+     height:30px;
+}
+
+
+.product-count .button{
+    padding:5px 14px;
+  margin: 0 15px;
+}
+
+
+.variants{
+    padding-bottom:20px;
+    margin-bottom:20px;
+    border-bottom:1px solid #ccc;
+}
+
+.desc-rev-wrapper{
+    width:100%;
+    height:600px;
+    position:relative;
+    background:#ccc;
+    clear:both;
+}
+
+.products-tabs{
+    width:100%;
+  height:50px;
+  background:#9co;
+  
+}
+
+.tabs-info{
+    padding-top:20px;
+  height:600px;
+  width:100%;
+  background:#9c0;
+  position:relative;
+}
+
+
+.scroll-to-top{
+background: url('up-arrow.png') no-repeat scroll left 0 transparent;
+    display: block;
+    height: 20px;
+    margin-bottom: 7px;
+      width: 35px;
+       bottom: 30px;
+   right: 10%;
+  cursor:pointer;
+    position: fixed;
+    z-index: 9999;
+    }
+    
+    .scroll-to-top:hover{
+background-position: left -34px;
+}
+
+/*The review sector*/
+
+.review{
+    margin-bottom: 20px;
+}
+
+.review-wrapper{
+    clear:both;
+    margin-top: 20px;
+    position: relative;
+}
+
+.tabs a, .tab-content, select{
+    border: 1px solid #D6D5D3;  /*  temp -  must be moved into globals*/
+}
+
+select{
+     color: #929292;
+    font-size: 11px;
+    margin: 0;
+    padding: 3px 3px 4px;
+}
+
+
+.tabs{
+    height: 30px;
+    line-height: 16px;   
+    width:100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -1px;
+}
+
+.tabs a{
+    background:url("../image/tab.png") repeat-x scroll 0 0 #FFFFFF;
+    color: #737373;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: -1px;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tabs a.selected{
+     background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 0 none;
+    color: #191919;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.tab-content{
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+}
+
+.tab-content{
+    position: relative;
+}
+
+.tab-content >div{
+    top:0;
+    left:0;
+}
+
+.item-characteristic, .item-review{
+    display: none;
+}

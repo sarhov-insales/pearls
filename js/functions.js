@@ -117,17 +117,24 @@ imgclone.animate({
 
 
 
+//  the images in product page
+
+
     jQuery('#mycarousel').jcarousel({
         // Configuration goes here
     });
 
 
 
+// the tabs
 
-
-
-
-
+    $('.tabs a').click(function(){
+    $(this).addClass('selected').siblings().removeClass('selected');
+    var activetab = $(this).attr('href');
+    var tabs = $('.tab-content >div').hide();
+   $('#'+activetab).fadeIn();
+    return false;
+});
 
 
 
