@@ -1315,13 +1315,24 @@ background: url('related-pagg-next.png') no-repeat scroll -24px 50% #F53767;
 
 }
 
+#list{
+    background: url('list_a.png') 0 bottom;
+}
+
+#grid{
+    background: url('grid_a.png') 0 bottom;
+}
 
 #list.active{
-     background: url('list_a.png') 0 bottom;
+     background: url('list_a.png') 0 top;
+}
+
+#grid.active{
+     background: url('grid_a.png') 0 top;
 }
 
 .product-list-wrapper{
-    margin-top: 7px;
+    margin-top: 27px;
 }
 
 .product-box{
@@ -1330,6 +1341,10 @@ background: url('related-pagg-next.png') no-repeat scroll -24px 50% #F53767;
     border-bottom: 1px solid #D6D5D3;
 }
 
+
+.product-list-wrapper .short-desc{
+    display: none;
+}
 
 .product-box:last-child{
     border: none;
@@ -1354,7 +1369,7 @@ background: url('related-pagg-next.png') no-repeat scroll -24px 50% #F53767;
     padding-left: 20px;
     text-align: left;
     width: 120px;
-    border-left: 1px solid #D6D5D3;
+    border:none;
 }
 
 .buying .price-new{
@@ -1377,5 +1392,40 @@ background: url('related-pagg-next.png') no-repeat scroll -24px 50% #F53767;
 }
 
 .grid{
-    background: #333;
+    width: 760px;
+}
+
+.grid .product-box{
+    float: left;
+    margin: 0 20px 0 0;
+    width: 170px;
+    overflow: hidden;
+    border: none;
+}
+
+.grid .long-desc, .grid .buying .price-tax{
+    display: none;
+}
+
+.grid .short-desc{
+    display: block;
+    clear: both;
+}
+
+.grid .text{
+    padding: 20px 0 0 0;
+    min-height: 30px;
+}
+
+.grid .buying{
+    float: none;
+    margin-left: 0;
+    border: none;
+    clear: both;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.grid .buying >div{
+    padding: 10px 0;
 }
