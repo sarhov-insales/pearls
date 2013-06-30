@@ -141,6 +141,43 @@ return false;
 });
 
 
+//the grid list switcher
+
+$(function() {
+    $('.product-list-wrapper').addClass('grid');
+	var cc = $.cookie('list_grid');
+	if (cc == 'g') {
+		$('.product-list-wrapper').addClass('grid');
+        $('#grid').addClass('active').siblings().removeClass('active');
+	} else {
+		$('.product-list-wrapper').removeClass('grid');
+	}
+});
+$('.display a').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+});
+
+$(document).ready(function() {
+
+	$('#grid').click(function() {
+       
+		$('.product-list-wrapper').fadeOut(300, function() {
+			$(this).addClass('grid').fadeIn(300);
+            $.cookie('list_grid', 'g', {expires: 7});
+		});
+		return false;
+	});
+	
+	$('#list').click(function() {
+		$('.product-list-wrapper').fadeOut(300, function() {
+			$(this).removeClass('grid').fadeIn(300);
+			$.cookie('list_grid', null);
+		});
+		return false;
+	});
+
+});
+
 
 
 
