@@ -1429,3 +1429,39 @@ background: url('related-pagg-next.png') no-repeat scroll -24px 50% #F53767;
 .grid .buying >div{
     padding: 10px 0;
 }
+
+
+/*the slide show*/
+
+.zoom-section{
+    position: relative;
+}
+
+.gallery{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top:0;
+    background:  url('zoom.png') 0 0 no-repeat;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.gallery:hover{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.gallery img{
+    opacity:0;
+}
+
+.pp_pic_holder * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
