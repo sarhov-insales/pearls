@@ -128,13 +128,6 @@ imgclone.animate({
         // Configuration goes here
     });
 
-    //the slide show in product
-
-$("area[data-rel^='prettyPhoto']").prettyPhoto();
-
-$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',slideshow:3000, autoplay_slideshow: false});
-$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-
 
 
 
@@ -152,39 +145,46 @@ return false;
 //the grid list switcher
 
 $(function() {
-    $('.product-list-wrapper').addClass('grid');
-	var cc = $.cookie('list_grid');
-	if (cc == 'g') {
-		$('.product-list-wrapper').addClass('grid');
-        $('#grid').addClass('active').siblings().removeClass('active');
-	} else {
-		$('.product-list-wrapper').removeClass('grid');
-	}
+$('.product-list-wrapper').addClass('grid');
+var cc = $.cookie('list_grid');
+if (cc == 'g') {
+$('.product-list-wrapper').addClass('grid');
+$('#grid').addClass('active').siblings().removeClass('active');
+} else {
+$('.product-list-wrapper').removeClass('grid');
+}
 });
+
 $('.display a').click(function(){
-    $(this).addClass('active').siblings().removeClass('active');
+$(this).addClass('active').siblings().removeClass('active');
+return false;
 });
 
-$(document).ready(function() {
 
-	$('#grid').click(function() {
-       
-		$('.product-list-wrapper').fadeOut(300, function() {
-			$(this).addClass('grid').fadeIn(300);
-            $.cookie('list_grid', 'g', {expires: 7});
-		});
-		return false;
-	});
-	
-	$('#list').click(function() {
-		$('.product-list-wrapper').fadeOut(300, function() {
-			$(this).removeClass('grid').fadeIn(300);
-			$.cookie('list_grid', null);
-		});
-		return false;
-	});
-
+$('#grid').click(function() {
+$('.product-list-wrapper').fadeOut(300, function() {
+$(this).addClass('grid').fadeIn(300);
+$.cookie('list_grid', 'g', {expires: 7});
 });
+return false;
+});
+
+
+$('#list').click(function() {
+$('.product-list-wrapper').fadeOut(300, function() {
+$(this).removeClass('grid').fadeIn(300);
+$.cookie('list_grid', null);
+});
+return false;
+});
+
+
+    //the slide show in product
+
+$("area[data-rel^='prettyPhoto']").prettyPhoto();
+
+$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',slideshow:3000, autoplay_slideshow: false});
+$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
 
 
 
